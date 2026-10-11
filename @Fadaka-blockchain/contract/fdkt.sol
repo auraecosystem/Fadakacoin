@@ -11,7 +11,7 @@ contract FadakaTokenV2 is Initializable, ERC20BurnableUpgradeable, PausableUpgra
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
     function initialize() public initializer {
-        __ERC20_init("FadakaToken", "FDAK");
+        __ERC20_init("FadakaToken", "FDKT");
         __ERC20Burnable_init();
         __Pausable_init();
         __AccessControl_init();
